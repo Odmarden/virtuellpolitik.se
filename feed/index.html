@@ -1,0 +1,507 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	xmlns:georss="http://www.georss.org/georss" xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" xmlns:media="http://search.yahoo.com/mrss/"
+	>
+
+<channel>
+	<title>Virtuell politik</title>
+	<atom:link href="https://virtuellpolitik.se/feed/" rel="self" type="application/rss+xml" />
+	<link>https://virtuellpolitik.se</link>
+	<description>– Politteknologi, propaganda, metapolitik</description>
+	<lastBuildDate>Tue, 31 Jul 2018 14:21:33 +0000</lastBuildDate>
+	<language>sv-SE</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>http://wordpress.com/</generator>
+
+<image>
+	<url>https://virtuellpolitik.se/wp-content/uploads/2018/04/cropped-img_0041.jpg?w=32</url>
+	<title>Virtuell politik</title>
+	<link>https://virtuellpolitik.se</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+<site xmlns="com-wordpress:feed-additions:1">102605995</site><cloud domain='virtuellpolitik.se' port='80' path='/?rsscloud=notify' registerProcedure='' protocol='http-post' />
+<atom:link rel="search" type="application/opensearchdescription+xml" href="https://virtuellpolitik.se/osd.xml" title="Virtuell politik" />
+	<atom:link rel='hub' href='https://virtuellpolitik.se/?pushpress=hub'/>
+	<item>
+		<title>Skydda krisinformationen vid internetattacker</title>
+		<link>https://virtuellpolitik.se/2016/10/21/skydda-krisinformationen-vid-internetattacker/</link>
+					<comments>https://virtuellpolitik.se/2016/10/21/skydda-krisinformationen-vid-internetattacker/#comments</comments>
+		
+		<dc:creator><![CDATA[Daniel Wiklander]]></dc:creator>
+		<pubDate>Fri, 21 Oct 2016 22:55:43 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<guid isPermaLink="false">http://virtuellpolitik.se/?p=378</guid>
+
+					<description><![CDATA[Fredagskvällens DDoS-attack mot det amerikanska företaget Dyn, som hanterar DNS-tjänster för ett stort antal sajter världen runt, orsakade kraftiga problem. Populära tjänster som Spotify, Netflix och Twitter slutade i praktiken att fungera när de inte längre gick att nå för användarna. För att uttrycka det så förenklat det går så försattes en del av systemet som håller reda [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Fredagskvällens <a href="https://krebsonsecurity.com/2016/10/ddos-on-dyn-impacts-twitter-spotify-reddit/" target="_blank">DDoS-attack mot det amerikanska företaget Dyn</a>, som hanterar DNS-tjänster för ett stort antal sajter världen runt, orsakade kraftiga problem. Populära tjänster som Spotify, Netflix och Twitter slutade i praktiken att fungera när de inte längre gick att nå för användarna.</p>
+<p><strong>För att uttrycka</strong> det så förenklat det går så försattes en del av systemet som håller reda på att den enkla adress du anger för att nå en sajt, till exempel <a href="http://www.msb.se" target="_blank">www.msb.se</a>, hör ihop med en så kallad ip-adress till en server där sajten rent fysiskt är lagrad – i MSB:s fall 193.182.190.234 – ur funktion i en riktad och mycket kraftfull attack där företaget Dyns servrar <a href="https://www.wired.com/2016/10/internet-outage-ddos-dns-dyn/">överhopades med tiotals miljoner anrop</a> så de slutade svara. Resultatet blev att alla sajter vars adresser hanteras av Dyn blev omöjliga att nå för den som inte kunde deras ip-nummer utantill.</p>
+<p>Vanligen är dessa nummer lätta att ta reda på via sajter som <a href="http://www.ip-lookup.net">ip-lookup.net</a>, men det bygger på just att DNS-tjänsten fungerar – det den inte gjorde i kväll.</p>
+<p><strong>Att inte kunna</strong> lyssna på musik via Spotify eller se film på Netflix gjorde fredagskvällen tråkigare för många, men värre är att sajter för viktiga samhällsfunktioner som <a href="http://www.msb.se" target="_blank">msb.se</a> och <a href="http://www.krisinformation.se">krisinformation.se</a> i praktiken var omöjliga att nå.</p>
+<p>I MSB:s och Krisinformations fall verkar det faktiskt som om sajterna bokstavligen var omöjliga att nå, även för den som känner till ip-numren. Jag letade upp MSB:s nummer via Google medan den stora DDoS-attacken mot Dyn pågick, och skrev in det i webbläsarens adressfält efter ”http://”. Efter en förväntad säkerhetsvarning från webbläsaren kom jag till en sida med ett felmeddelande om att sajten inte kunde hittas. Den som istället skriver in ip-numret till krisinformation.se, 216.146.46.11, efter ”http://” möts direkt av den välkända felkoden ”404 Not Found”.</p>
+<p><strong>Det finns säkert</strong> goda skäl till att de som byggt MSB:s och Krisinformations sajter valt att ha det så, men kvällens haveri visar att det vore en god idé att även låta besökare nå sajterna via deras ip-nummer om de vanliga adresserna slutar fungera på grund av en attack mot ett företag i ett annat land. Naturligtvis måste dessa ip-nummer i så fall kommuniceras ordentligt, men till det har ju myndigheten utmärkta alternativa kanaler.</p>
+<p>En direkt attack mot svenska myndigheters servrar är naturligtvis fullt möjlig, och dessutom ganska svår att helt skydda sig mot. Men en sajt som Krisinformation måste kunna gå att nå även om någon bestämmer sig för att slå ut ett amerikanskt företag.</p>
+<p><strong>Enligt sajten Wireds</strong> <a href="https://www.wired.com/2016/10/internet-outage-ddos-dns-dyn/" target="_blank">genomgång av attacken</a> utfördes den av allt att döma genom att ett stort antal elektroniska apparater som är uppkopplade mot internet – exempelvis webbkameror, routrar osv, men även vissa moderna köksmaskiner – infekterades med ett virus som gjorde att de kunde användas för att dränka Dyns servrar i anrop.</p>
+<p>Uppkopplade hushållsmaskiner och liknande, <a href="http://blog.level3.com/security/grinch-stole-iot/" target="_blank">det så kallade ”internet of things”</a> har omvittnat usel säkerhet i många fall, och Wired konstaterar att det kan komma fler attacker som använder sig av samma metoder.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://virtuellpolitik.se/2016/10/21/skydda-krisinformationen-vid-internetattacker/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">378</post-id>
+		<media:thumbnail url="https://virtuellpolitik.se/wp-content/uploads/2016/10/usa.jpg" />
+		<media:content url="https://virtuellpolitik.se/wp-content/uploads/2016/10/usa.jpg" medium="image">
+			<media:title type="html">usa</media:title>
+		</media:content>
+
+		<media:content url="https://0.gravatar.com/avatar/fc5f578b5798a92c1b9593792fb1a496c0cebe2743aad275ff46c7f300816cb6?s=96&#38;d=identicon&#38;r=G" medium="image">
+			<media:title type="html">al4mut</media:title>
+		</media:content>
+	</item>
+		<item>
+		<title>Vilka var tavelförsäljarna?</title>
+		<link>https://virtuellpolitik.se/2016/09/17/vilka-var-tavelforsaljarna/</link>
+					<comments>https://virtuellpolitik.se/2016/09/17/vilka-var-tavelforsaljarna/#comments</comments>
+		
+		<dc:creator><![CDATA[Daniel Wiklander]]></dc:creator>
+		<pubDate>Sat, 17 Sep 2016 17:21:38 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<guid isPermaLink="false">http://virtuellpolitik.se/?p=300</guid>
+
+					<description><![CDATA[När jag var tonåring under andra halvan av 1980-talet gick det rykten om polska tavelförsäljare som reste runt i Sverige. Att de skulle vara spioner, att de kartlade var försvarsanställda med känsliga befattningar bodde. I gymnasiet, under Warszawapaktens sista skälvande minuter, var det barn till just militärer som berättade om besök från polska tavelförsäljare. Däremot inga [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>När jag var tonåring under andra halvan av 1980-talet gick det rykten om polska tavelförsäljare som reste runt i Sverige. Att de skulle vara spioner, att de kartlade var försvarsanställda med känsliga befattningar bodde.</p>
+<p><strong>I gymnasiet,</strong> under Warszawapaktens sista skälvande minuter, var det barn till just militärer som berättade om besök från polska tavelförsäljare. Däremot inga andra.</p>
+<p>Då hade ryktet om tavelförsäljarna som spioner varit i svang ganska länge i Sverige. Redan 1979 greps nämligen åtta tavelförsäljare från Polen och förhördes om bland annat varför de hade en detaljerad karta i skala 1:50 000 som även användes av försvaret.</p>
+<p><strong>Varken vid detta</strong> tillfälle eller senare räckte bevisen för åtal. Men begreppet var redan etablerat. 1984 gjordes en enkät bland försvarsanställda som presenterades i rapporten <em>Tavelförsäljare m.m. – säkerhetshotande verksamhet mot FV anläggningar och personal</em>.</p>
+<p>Särskilt ansågs tavelförsäljarna rikta in sig på stridspiloter, och allra mest på dem som flög Viggen. I filmen <a href="https://www.youtube.com/watch?v=bLcJCNlmLPk">Förebudet</a> som Försvarsmakten producerade i utbildningssyfte 1987 förekommer scener där ett par där mannen är pilot berättar om besök av ”potatisförsäljare”, för att senare, samtidigt som en massiv destabiliseringsoperation mot viktig svensk infrastruktur pågår, mördas i sitt hem.</p>
+<p><strong>I den nyligen</strong> utkomna boken <em>Svenskt flyg under kalla kriget</em> anser sig författarna kunna avliva de vanligaste ryktena om de polska tavelförsäljarna. Jag har inte läst boken än, men däremot en <a href="http://www.svd.se/nya-uppgifter-orimligt-att-tavelforsaljarna-var-spioner">lång artikel i Svenska Dagbladet </a>där författarna uttalar sig om vad de funnit.</p>
+<p>Vilket är att tavelförsäljarna på det stora hela var på riktigt. Det vill säga dem man lyckats spåra upp och intervjua. Vinkeln i Svenska Dagbladets artikel – som också verkar vara författarnas – är att ryktet bara var just ett rykte. Den där suspekt högupplösta kartan till trots.</p>
+<p><strong>Thomas Magnusson</strong>, en av författarna, utvecklar i SvD-artikeln varför han inte tror på spionspåret:</p>
+<p>”På den här tiden fanns det en militär rulla, där all militär personal stod listad. Där kunde man enkelt lista ut precis vilka som var Viggenpiloter. Dessutom hade folk titlar i telefonkatalogen på den här tiden. Man hade inte behövt cykla omkring och absolut inte ta på sig omaket att sälja tavlor.”</p>
+<p>Mot det kunde man invända, att även om nu verkligen varenda officer med känslig befattning stod i telefonkatalogen på 1980-talet så behövde någon som planerade att döda dem ändå kolla de uppgifterna på plats – samt givetvis allt möjligt annat kring bostadens läge och så vidare som inte går att utläsa ur telefonkatalogen.</p>
+<p><strong>Sedan finns det</strong> andra invändningar. Förutom den självklara att det naturligtvis måste ha funnits riktiga tavelförsäljare till att börja med om någon skulle få för sig att låtsas vara det, och naturligtvis att även en alldeles äkta polsk tavelförsäljare kan ha haft en mer ljusskygg sidoinkomst, så kan mycket väl ryktet om spionerande tavelförsäljare efter gripandena 1979 och 1981 ha spätts på även av utländsk underrättelsetjänst.</p>
+<p>Dels för att blanda bort korten från annan kartläggning av militär personal (som naturligtvis gjordes), och dels som ren psykning av de kartlagda.</p>
+<p><strong>Särskilt efter att</strong> filmen Förebudet börjat visas 1987 och verkligen hamrat in förfarandet, kan besök av ”tavelförsäljare”, som ju inte alls behöver ha varit samma personer som dem Thomas Magnusson och hans medförfattare letat upp i Polen, ha varit ett sätt att säga till exempelvis stridspiloter att ”vi ser dig”. Detta är ju också den period jag och andra hör från officersbarn att just deras hem (men få andras) får besök.</p>
+<p>Jag tror inte man ska underskatta den psykologiska effekten, särskilt som Försvaret själva i sin film brer på rejält med det känslomässiga, deras fiktiva unga par som fått påhälsning verkar förkrossade av tanken att besöket innebär att de ska likvideras i händelse av krig. Vilket ju också sker i filmen.</p>
+<p><strong>Som vanligt i</strong> sådana här sammanhang är saker sällan svarta eller vita. Det är inte antingen eller. Ärliga, hårt arbetande kringresande tavelförsäljare och spioner som låtsades vara det kan ha existerat parallellt, och hur ambitiöst grävande som än genomförts för att hitta de förstnämnda så säger det inte mycket om den andra kategorin.</p>
+<p>Lyssna även på <a href="http://sverigesradio.se/sida/avsnitt/599686?programid=2519">Kidnappningsförsöket på Peter Wallenberg</a>, P3 Dokumentärs mycket intressanta avsnitt om bland annat tavelförsäljare på 1980-talet.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://virtuellpolitik.se/2016/09/17/vilka-var-tavelforsaljarna/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">300</post-id>
+		<media:thumbnail url="https://virtuellpolitik.se/wp-content/uploads/2016/09/focc88rebudet.jpg" />
+		<media:content url="https://virtuellpolitik.se/wp-content/uploads/2016/09/focc88rebudet.jpg" medium="image">
+			<media:title type="html">fo%cc%88rebudet</media:title>
+		</media:content>
+
+		<media:content url="https://0.gravatar.com/avatar/fc5f578b5798a92c1b9593792fb1a496c0cebe2743aad275ff46c7f300816cb6?s=96&#38;d=identicon&#38;r=G" medium="image">
+			<media:title type="html">al4mut</media:title>
+		</media:content>
+	</item>
+		<item>
+		<title>En egendomlig skyttegrav – om Filters propagandareportage</title>
+		<link>https://virtuellpolitik.se/2016/08/24/en-egendomlig-skyttegrav-om-filters-propagandareportage/</link>
+					<comments>https://virtuellpolitik.se/2016/08/24/en-egendomlig-skyttegrav-om-filters-propagandareportage/#comments</comments>
+		
+		<dc:creator><![CDATA[Daniel Wiklander]]></dc:creator>
+		<pubDate>Wed, 24 Aug 2016 20:51:32 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<guid isPermaLink="false">http://virtuellpolitik.se/?p=149</guid>
+
+					<description><![CDATA[Tävlingen om 2016 år sämsta kvällstidningsrubrik avgjordes redan på årets första dag. Aftonbladet vann, med en förstasida som dominerades av en bild på Rysslands president i toppluva, och texten NU DRAR PUTIN- KYLAN IN. Det skulle bli kallt helt enkelt, på grund av nordostliga vindar. Presidenten hade troligen mycket lite personligen med saken att göra. [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><img data-attachment-id="155" data-permalink="https://virtuellpolitik.se/2016/08/24/en-egendomlig-skyttegrav-om-filters-propagandareportage/putinkylan/" data-orig-file="https://virtuellpolitik.se/wp-content/uploads/2016/08/putinkylan.jpg" data-orig-size="1890,1938" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="putinkylan" data-image-description="" data-image-caption="" data-medium-file="https://virtuellpolitik.se/wp-content/uploads/2016/08/putinkylan.jpg?w=293" data-large-file="https://virtuellpolitik.se/wp-content/uploads/2016/08/putinkylan.jpg?w=1000" class="alignnone size-full wp-image-155" src="https://virtuellpolitik.se/wp-content/uploads/2016/08/putinkylan.jpg?w=1000" alt="putinkylan"   srcset="https://virtuellpolitik.se/wp-content/uploads/2016/08/putinkylan.jpg 1890w, https://virtuellpolitik.se/wp-content/uploads/2016/08/putinkylan.jpg?w=146&amp;h=150 146w, https://virtuellpolitik.se/wp-content/uploads/2016/08/putinkylan.jpg?w=293&amp;h=300 293w, https://virtuellpolitik.se/wp-content/uploads/2016/08/putinkylan.jpg?w=768&amp;h=788 768w, https://virtuellpolitik.se/wp-content/uploads/2016/08/putinkylan.jpg?w=999&amp;h=1024 999w, https://virtuellpolitik.se/wp-content/uploads/2016/08/putinkylan.jpg?w=1440&amp;h=1477 1440w" sizes="(max-width: 1890px) 100vw, 1890px" /></p>
+<p class="p1"><span class="s1">Tävlingen om 2016 år sämsta kvällstidningsrubrik avgjordes redan på årets första dag. Aftonbladet vann, med en förstasida som dominerades av en bild på Rysslands president i toppluva, och texten</span></p>
+<p>NU<br />
+DRAR<br />
+PUTIN-<br />
+KYLAN IN.</p>
+<p class="p1"><span class="s1"><strong>Det skulle bli</strong> kallt helt enkelt, på grund av nordostliga vindar. Presidenten hade troligen mycket lite personligen med saken att göra. </span></p>
+<p class="p1"><span class="s1">Oro för ett latent hot från Öst har vi svenskar levt med i hundratals år, som ett arv från stormaktstiden och olika försök att återupprätta den. Ofta har svenska kungar startat krigen, ofta har de förr eller senare fått stryk. Detta har genom århundradena inneburit nedbrända städer längs Östersjökusten, från Piteå i norr till Norrköping i söder. </span></p>
+<p class="p1"><span class="s1">Under tiden har vårt territorium krympt, tills förlusten av Finland 1809 gjorde att Sverige hamnade i stort sett inom dagens gränser, där det förblivit. En petition från i stort sett samtliga röstberättigade ålänningar på 1920-talet om att tillhöra kungariket Sverige ledde inte till någon utvidgning. Grannen på andra sidan vattnet och dess militärmakt har funnits kvar, med växlande grad av auktoritärt styre och olika stor militär slagkraft.</span></p>
+<p class="p1"><span class="s1"><strong>Narrativet om den farlige</strong> Ryssen är av dessa skäl lätt att mana fram för den som vill. Som ett trött sätt att <a href="https://www.arbetaren.se/2015/03/28/falskspel-med-rysskortet/" target="_blank">svärta ner politiska motståndare</a>, som grund för alarmism eller helt enkelt för att formulera en tramsig förstasidesrubrik en långsam nyårsnatt när man helst hade velat festa in det nya året istället för att sitta på Aftonbladet och jobba. </span></p>
+<p class="p1"><span class="s1">Samma tidning presterade några månader senare en annan förstasida som var nästan lika fånig, men på ett annat vis. Nu gällde det en räcka händelser som framför allt i sociala medier använts för att piska upp en stämning där alla möjliga datorhaverier och bland annat en vandaliserad radiomast togs som intäkt för sabotageverksamhet från Främmande makt. Uppmaningar om att ta det lugnt och inte fortsätta elda på ett narrativ utan speciellt mycket verklighetsanknytning hörsammades av få. Aftonbladet för sin del satte den 20 maj vinjetten ”Sverige under attack?” ovanför rubriken</span></p>
+<p>◙ Flygkollaps<br />
+◙ SOS-haveri<br />
+◙ Tv-sabotage</p>
+<p class="p1"><span class="s1">och citat från en icke namngiven expert om att ”syftet är att visa Sveriges svaghet”.</span></p>
+<p class="p1"><span class="s1">Samt visa beredvilligheten hos landets medier att låta sig ryckas med i rena spekulationer, uppenbarligen.</span></p>
+<p class="p1"><span class="s1"><strong>Detta är nu inte</strong> hela sanningen. Det går utmärkt att skratta åt kvällspressens rubriker och att beklaga hur snabbt det går att trissa upp stämningen med hjälp av sociala medier, men det innebär inte att varken den militära upprustningen eller satsningarna på propaganda och påverkan mot Väst från ryskt håll ska underskattas. </span></p>
+<p class="p1"><span class="s1">Det är nämligen lätt att slira i det diket medan man hånler åt ”Putin-kylan” och skakar på huvudet åt larmet i den ekokammare där vissa säkerhetspolitiskt intresserade verkar befinna sig. Sägs det att Ryssland rustar för krig kan en motreaktion bli att ”nej, men varför skulle de det?” Misstänks vartenda strömavbrott eller internethaveri vara ”stresstester” av samhället inför en invasion är det förståeligt om vissa börjar tvivla. </span></p>
+<p class="p1"><span class="s1">Nästa tanke kan bli att någon måste tjäna på att skapa de här stämningarna. Andra gamla narrativ dammas av, som det om försvarsmakten som särintresse, generaler och amiraler som vill ha skattepengar och ett existensberättigande. Samt givetvis att en kampanj för att driva det oberoende Sverige i famnen på Nato förs med alla medel och med understöd från utriket. Vilket den förvisso gör – parallellt med en motkampanj med mycket påtaglig utrikes uppbackning.</span></p>
+<p><strong>Att döma av</strong> ledaren i <a href="http://magasinetfilter.se/i-filters-varld/2016-9" target="_blank">senaste numret av magasinet Filter</a>, ansluter sig chefredaktörerna Erik Eje Almqvist och Mattias Göransson till gruppen som reagerar så.</p>
+<p class="p1"><span class="s1">Vladimir Putin har varit en ”skänk från ovan”, och nu handlar det inte om någon förmåga att influera svenskt vinterväder, utan de olika aktörerna i vad man kallar ”det militärindustriella komplexet”, där Försvarsmakten, försvarsindustrin och olika tankesmedjor och politiska organisationer ingår, har kunnat dra nytta av den ryske ledaren för sina egna syften. Ökade försvarsanslag kallas en ”belöning” för att man lyckats få försvarsfrågan högre upp på agendan. </span></p>
+<p class="p1"><span class="s1">Ledaren är en inledning till numrets huvudartikel, <a href="http://magasinetfilter.se/feature/trollfabriken/" target="_blank">Den svenska trollfabriken</a>. På 34 sidor driver Mattias Göransson en tes som delvis känns igen från hans <a href="http://magasinetfilter.se/magasin/2015/44/lagvattenmarket" target="_blank">tidigare artiklar om svenska marinens jakt på ubåtar</a> – den att ubåtsjakt är ett skådespel avsett att lättare öka försvarsbudgeten. </span></p>
+<p class="p1"><span class="s1">Naturligtvis kan inte Mattias Göransson med säkerhet avgöra att det inte förekommit ubåtskränkningar i svenska vatten, och det är han noga med att påpeka:</span></p>
+<p class="p1"><span class="s1">”Inget av detta betyder att Sverige aldrig utsatts för undervattenskränkningar, bara att det saknas hållbara belägg för den fantasieggande undervattensverksamheten inomskärs.”</span></p>
+<p class="p1"><span class="s1"><strong>”Den fantasieggande</strong> undervattensverksamheten inomskärs” syftar på uppgifter om en ubåt av typen Piranja, enligt Göransson en oval, knappt trettio meter lång farkost endast framställd i två exemplar alldeles i slutet av Sovjeteran. Vad han däremot inte över huvud taget diskuterar, är vilken typ av främmande undervattensverksamhet som istället vore rimlig att förvänta sig utifrån främmande makts behov. Vi får invändningar mot marinens egna påståenden, stundtals ganska så raljerande, men ingen information om hur Ryssland <a href="http://sverigesradio.se/sida/avsnitt/440846?programid=2519" target="_blank">egentligen</a> <a href="http://www.dn.se/nyheter/sverige/nya-uppgifter-om-sovjetiskt-sprangamne-i-stockholm/" target="_blank">kan antas operera i våra vatten</a>. Det är som om han trodde att de inte varit här alls, bara för att det saknas ”hållbara belägg” för just 30 meters ubåtar. </span></p>
+<p class="p1"><span class="s1">I en av tre långa intervjuer där män som delar Mattias Göranssons syn på artikelns ämne får lägga ut texten, säger Johan Kihl, pensionerad generallöjtnant, följande om förmodad rysk undervattensverksamhet:</span></p>
+<p class="p1"><span class="s1">”Ponera istället att allt var sant, att de faktiskt varit här varenda gång. Vad har de då åstadkommit, rent konkret? Och spelar det någon roll? Det är ju ännu intressantare. Men den frågan är det ingen som ställer sig, för då skulle du betraktas som galen.”</span></p>
+<p><strong>Jag ska inte låtsas att</strong> jag begriper exakt vad Johan Kihl egentligen menar. För rimligen bör just de frågorna – i synnerhet den första – uppta stor del av arbetstiden för vissa anställda inom försvaret. Särskilt om vi släpper att det måste handla just om relativt stora ubåtar och istället tänker oss exempelvis dykare och/eller små farkoster. Tror man att man utsatts för främmande undervattensverksamhet borde de frågor Johan Kihl hävdar skulle leda till motfrågor om mental hälsa helt enkelt vara självklara.</p>
+<p class="p1"><span class="s1">Den ene av de andra två äldre herrar som får vara Mattias Göranssons ledsagare i artikeln och säga allt det en journalist helst inte skriver själv är Hans Blix, före detta svensk utrikesminister och före detta krigsmaterielinspektör som blev världskänd under jakten på Saddam Husseins förmodade massförstörelsevapen. De han aldrig hittade eftersom de inte fanns, och som USA och Storbritannien sedan, utan Hans Blix medverkan, lade stor möda på att lura världen att de existerade för att kunna anfalla Irak 2003.</span></p>
+<p class="p1"><span class="s1">I dag är Hans Blix engagerad i det svenska Natomotståndet och medarbetare i projektet <a href="https://natoutredningen.se/organisation/" target="_blank">Natoutredningen</a>, som presenterade sina slutsatser i vintras. Detta nämner inte Mattias Göransson. Inte för att det på något vis är en hemlighet eller något Hans Blix försöker dölja, tvärtom.</span></p>
+<p><strong>I Natoutredningen medverkade</strong> även Sven Hirdman, den tredje av Mattias Göranssons intervjupersoner. Hans biografi, från tolkskolan på 1950-talet till tiden som Moskvaambassadör 1994 – 2004 och dagens sysslor som debattör, konsult och skribent får vi ganska detaljerad i artikeln. Däremot inte ett ord om Natoutredningen, trots att det alltså knappast är något hemligt.</p>
+<p class="p1"><span class="s1">Ett annat av Sven Hirdmans uppdrag som inte heller redovisas är den som ledamot i <a href="http://english.mgimo.ru/about-mgimo/board-of-trustees" target="_blank">fondstyrelsen för den ryska elitskolan MGIMO</a>, Moskvas statliga institut för internationella relationer. MGIMO lyder administrativt under ryska UD, och utbildar blivande diplomater. Ordförande är Rysslands utrikesminister Sergej Lavrov, och bland ledamöterna märks prins Albert II av Monaco, Norilsk Nickels styrelseordförande Vladimir Potanin, förre chefen för ryska järnvägen <a href="http://www.stopfake.org/en/listen-live-home-news-radio-most-popular-about-us-contact-us-press-review-putin-associate-to-open-propaganda-centre-in-berlin/" target="_blank">Vladimir Jakunin</a> – och Ingvar Kamprad.<br />
+</span></p>
+<p class="p1"><span class="s1">I ett <a href="http://www.dn.se/debatt/repliker/nato-foresprakarnas-konsekvensanalys-brister/" target="_blank">debattinlägg i Dagens Nyheter</a> i juni 2015 beskrev Sven Hirdman sin roll i MGIMO:s fondstyrelse på följande vis:</span></p>
+<p>”För fem år sedan gav Ikea, som har stor affärsverksamhet i Ryssland, Moskvas statliga institut för internationella relationer, MGIMO, en donation på flera miljoner dollar för att Institutet skulle utveckla metoder för att dels bekämpa korruption i Ryssland, dels höja den internationella ratingen för ryska universitet. Ikea bad mig att jag skulle bevaka donationsmedlens användning genom att ingå i Institutets fondstyrelses råd, Board of Trustees, vilket borde anses vällovligt ur alla tänkbara svenska synpunkter. I detta organ sitter ett 10-tal donatorer, officiella ryssar och några utlänningar. Eftersom MGIMO lyder under ryska UD, MID, är utrikesminister Lavrov ordförande i detta råd. Jag sitter på ett svenskt mandat och får ingen ersättning från ryskt håll. Jag har en kontrollfunktion och är inte i beroendeställning till någon. Uppdraget upphör för övrigt i höst.”</p>
+<p class="p1"><span class="s1">”I höst” betyder alltså hösten 2015, men ännu i augusti 2016 när detta skrivs finns hans namn kvar på MGIMOs webbplats – om det beror på slarv eller på att uppdraget förlängts är okänt.</span></p>
+<p class="p1"><span class="s1"><strong>Sune Olofson, pensionerad</strong> debattredaktör på Svenska Dagbladet, anser att det är <a href="http://www.alliansfriheten.se/ovardigt-en-demokratisk-debatt-sune-olofson/" target="_blank">oschyst mot Sven Hirdman att ta upp MGIMO-uppdraget</a> som argument för att han inte skulle vara värd att lyssna på i Natodebatten. Att som Mattias Göransson helt utelämna det är å andra sidan rent ohederligt. Särskilt som Sven Hirdman i intervjun berömmer Sergej Lavrov och tar honom i försvar för hans uttalanden om att ett svenskt närmande till Nato skulle leda till åtgärder från ryskt håll.</span></p>
+<p class="p1"><span class="s1">Det är i och med intervjun med Sven Hirdman som Mattias Göranssons artikel blir riktigt anmärkningsvärd. En stor del av de 34 sidorna upptas av att granska svenska medier som Svenska Dagbladet och Dagens Nyheter, och hur de rapporterat om bland annat <a href="http://www.dn.se/nyheter/sverige/ryssland-ovade-karnvapenanfall-mot-sverige/" target="_blank">ryska flygövningar över Östersjön</a> och naturligtvis om ubåtsjakterna. En del är tillbakablickar på tidigare epoker då allmänhetens observationer snarare gällde oidentifierade flygande föremål än ubåtstorn och periskop. Helt frånvarande är det faktum att Sverige i dag utsätts för påverkansoperationer och <a href="http://www.nytimes.com/2016/08/29/world/europe/russia-sweden-disinformation.html?smid=tw-share&amp;_r=0" target="_blank">desinformation</a> från Ryssland, bland annat genom att falska brev som ska se ut som de kommer från <a href="http://www.expressen.se/nyheter/vill-salja-vapen-till-ukraina-i-falskt-brev/" target="_blank">försvarsministern</a> eller från <a href="http://www.expressen.se/nyheter/ryssland-visar-upp-falskt-svenskt-brev/" target="_blank">tjänstemän i det svenska rättsväsendet</a> sprids på internet. Eller, just breven nämns i förbifarten, men i ett sammanhang där det inte verkar som det är meningen att de ska tas på allvar.</span></p>
+<p class="p1"><span class="s1">Om man bara läste Mattias Göranssons artikel i Filter skulle man kunna tro att Ryssland över huvud taget inte till helt nyligen haft <a href="http://www.expressen.se/nyheter/putin-stanger-svenska-propagandasajten/" target="_blank">en svenskspråkig propagandasajt</a>, att SVT inte nyligen visat en <a href="https://omlinemagasin.se/2016/04/26/vinklat-och-forenklat-i-svts-ukrainadokumentar/" target="_blank">journalistiskt bristfällig och på flera vis rent lögnaktig </a>dokumentär om Ukraina, eller att inte kulturredaktionen på Sveriges största nyhetssajt särskilt uppmärksammats <a href="http://www.fiia.fi/fi/publication/588/fog_of_falsehood/" target="_blank">i internationella rapporter</a> för att dess rapportering om före detta Sovjetrepubliker ofta ligger så nära det ryska narrativet. </span></p>
+<p class="p1"><span class="s1"><strong>Sven Hirdman avfärdar</strong> RT och Sputnik, de ryska propagandasajterna riktade till en västpublik, som ointressanta för påverkan på Sverige, och säger att ”den ryska propagandan är ingenting mot den svenska åt andra hållet”. Påståendet är absurt, särskilt om man ser till vilken energi som läggs på påverkansoperationer från det ryska hållet. </span></p>
+<p class="p1"><span class="s1">Ryssland saknar så kallad <em>soft power</em>, att andra länder ser upp till dem, och därför har de inget att vinna på propaganda, hävdar Sven Hirdman. Men den propaganda riktad mot väst Ryssland ägnar sig åt i dag handlar inte om att framhäva sin egen förträfflighet, utan om att <a href="https://virtuellpolitik.se/2016/06/14/att-hallucinera-verklighet/">skapa förvirring och splittring</a>. Rapporteringen hos de ryska propagandakanalerna handlar inte om rekordskördar, lyckade rymdfärder och glada ryska arbetare, utan om <a href="https://www.splcenter.org/fighting-hate/intelligence-report/2010/russian-tv-channel-pushes-patriot-conspiracy-theories" target="_blank">konspirationsteorier</a> och om ett Västeuropa i förfall, översvämmat av <a href="http://observers.france24.com/en/20160128-fake-video-german-woman-kidnapping-rape-russia" target="_blank">kriminella flyktingar som antastar kvinnor</a>. </span></p>
+<p class="p1"><span class="s1"><strong>Det är omöjligt att</strong> ta Mattias Göranssons artikel på allvar som analys av det han kallar svensk propaganda, när han ger framför allt Sven Hirdman men även Hans Blix så stort utrymme för väldigt kategoriska påståenden. För den som vill veta mer om hur modern rysk propaganda fungerar finns i dag enorma <a href="http://www.nytimes.com/2015/06/07/magazine/the-agency.html?_r=0" target="_blank">mängder material </a>att ta del av, sajter <a href="https://virtuellpolitik.wordpress.com/2015/11/24/rysslands-syfte-ar-att-skapa-forvirring/?iframe=true&amp;theme_preview=true">dedikerade till att motbevisa lögner</a> och <a href="http://www.interpretermag.com/the-menace-of-unreality-how-the-kremlin-weaponizes-information-culture-and-money/" target="_blank">analyser av mål och medel</a>. </span></p>
+<p class="p1">Att då nöja sig med att låta någon, som hävdar att Rysslands utrikesminister Sergej Lavrov ”vill förklara” när han gör hotfulla uttalanden, slå fast att relationen mellan baltstaterna och Ryssland skulle bli bra bara situationen för ryssarna i de baltiska länderna förbättrades – i sig ett rimligt önskemål – det håller inte. Inte två och ett halvt år efter ockupationen av Krim och två år efter <a href="https://www.bellingcat.com/news/uk-and-europe/2015/08/07/mh17-conspiracies/" target="_blank">nedskjutningen av det malaysiska passagerarplanet MH17</a> och den ryska inmarschen i Donbass, med den flodvåg av propaganda och desinformation som spridits kring de operationerna och som fortsätter <a href="http://kioski.yle.fi/omat/my-year-as-a-pro-russia-troll-magnet" target="_blank">spridas i Norden</a> och i de baltiska länderna.</p>
+<p class="p1"><span class="s1"><strong>”Vi gräver ner oss</strong> här i vår egendomliga skyttegrav” är Hirdmans och artikelns slutord. De syftar på Sverige och i synnerhet på nyhetsrapporteringen i Dagens Nyheter. </span></p>
+<p class="p1"><span class="s1">Jag kan inte låta bli att tänka på dem som passande för regimen i Kreml, och för de människor i väst som av olika anledningar backar upp den. Vare sig det nu är för pengar, för att de uppskattar politiken eller bara av ren och skär okunskap eller önsketänkande.<span class="Apple-converted-space">   </span></span></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://virtuellpolitik.se/2016/08/24/en-egendomlig-skyttegrav-om-filters-propagandareportage/feed/</wfw:commentRss>
+			<slash:comments>4</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">149</post-id>
+		<media:thumbnail url="https://virtuellpolitik.se/wp-content/uploads/2016/08/img_3695.jpg" />
+		<media:content url="https://virtuellpolitik.se/wp-content/uploads/2016/08/img_3695.jpg" medium="image">
+			<media:title type="html">IMG_3695</media:title>
+		</media:content>
+
+		<media:content url="https://0.gravatar.com/avatar/fc5f578b5798a92c1b9593792fb1a496c0cebe2743aad275ff46c7f300816cb6?s=96&#38;d=identicon&#38;r=G" medium="image">
+			<media:title type="html">al4mut</media:title>
+		</media:content>
+
+		<media:content url="https://virtuellpolitik.se/wp-content/uploads/2016/08/putinkylan.jpg" medium="image">
+			<media:title type="html">putinkylan</media:title>
+		</media:content>
+	</item>
+		<item>
+		<title>Om propaganda – att hallucinera verklighet</title>
+		<link>https://virtuellpolitik.se/2016/06/14/att-hallucinera-verklighet/</link>
+					<comments>https://virtuellpolitik.se/2016/06/14/att-hallucinera-verklighet/#comments</comments>
+		
+		<dc:creator><![CDATA[Daniel Wiklander]]></dc:creator>
+		<pubDate>Tue, 14 Jun 2016 09:02:14 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<guid isPermaLink="false">http://virtuellpolitik.se/?p=84</guid>
+
+					<description><![CDATA[Under våren kom den rysk-brittiske journalisten Peter Pomerantsevs bok Ingenting är sant och allt är möjligt ut på svenska. 
+Jag intervjuade honom i samband med hans Sverigebesök i mars. ]]></description>
+										<content:encoded><![CDATA[<p><img data-attachment-id="101" data-permalink="https://virtuellpolitik.se/2016/06/14/att-hallucinera-verklighet/pomerantsev_webb/" data-orig-file="https://virtuellpolitik.se/wp-content/uploads/2016/06/pomerantsev_webb.jpg" data-orig-size="854,578" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="pomerantsev_webb" data-image-description="&lt;p&gt;– Jag tror vi börjar förstå att journalister är lika viktiga som läkare, sköterskor och soldater, säger Peter Pomerantsev.&lt;/p&gt;
+" data-image-caption="&lt;p&gt;Foto: Daniel Wiklander&lt;/p&gt;
+" data-medium-file="https://virtuellpolitik.se/wp-content/uploads/2016/06/pomerantsev_webb.jpg?w=300" data-large-file="https://virtuellpolitik.se/wp-content/uploads/2016/06/pomerantsev_webb.jpg?w=854" class="alignnone size-full wp-image-101" src="https://virtuellpolitik.se/wp-content/uploads/2016/06/pomerantsev_webb.jpg?w=1000" alt="pomerantsev_webb"   srcset="https://virtuellpolitik.se/wp-content/uploads/2016/06/pomerantsev_webb.jpg 854w, https://virtuellpolitik.se/wp-content/uploads/2016/06/pomerantsev_webb.jpg?w=150&amp;h=102 150w, https://virtuellpolitik.se/wp-content/uploads/2016/06/pomerantsev_webb.jpg?w=300&amp;h=203 300w, https://virtuellpolitik.se/wp-content/uploads/2016/06/pomerantsev_webb.jpg?w=768&amp;h=520 768w" sizes="(max-width: 854px) 100vw, 854px" /></p>
+<p style="text-align:right;"><em>Foto: Daniel Wiklander</em></p>
+<p><strong>Under våren kom den rysk-brittiske journalisten Peter Pomerantsevs bok I<em>ngenting är sant och allt är möjligt</em> ut på svenska. </strong><br />
+<strong>Jag intervjuade honom i samband med hans Sverigebesök i mars. </strong></p>
+<p>Det postsovjetiska politiska landskapet skiljer sig starkt från det västerländska det på ytan försökt efterlikna. Den opposition som i dag har en chans att få mandat till det ryska parlamentet, duman, är partier skapade och styrda av makthavarna. Enskilda ledamöter har uttryckt avvikande åsikter. De har i viss mån fått hållas, men har inte kunnat påverka den förda politiken.</p>
+<p><strong>Att suga upp</strong> och ofarliggöra potentiellt besvärliga politiska rörelser, och att skapa egna man kan kontrollera, är en viktig del i det den brittiske historikern och statsvetaren Andrew Wilson kallat virtuell politik. I Ryssland är det en tradition som går tillbaka till tsardömet. Redan för 100 år sedan var makthavarna inte främmande för att infiltrera och styra förment upproriska grupperingar eller skapa regimtrogna fackföreningar – som deras motståndare i sin tur infiltrerade.</p>
+<p>Det första decenniet i Ryssland efter Sovjetunionens sammanbrott kännetecknades av omfattande kriminalitet och ogenerad utplundring av tidigare offentligt ägda tillgångar, men även en spirande öppenhet och pressfrihet. Starkare styrning av medierna, framför allt tv, blev därför en prioritet för makthavarna under tidigt 00-tal, inte minst efter att säkerhetstjänstens katastrofala insats vid gisslandramat på Dubrovkateatern i Moskva 2002 visats upp i direktsändning i tv.</p>
+<p><strong>Vladimir Putin inledde</strong> sin andra presidentperiod i efterdyningarna av den så kallade orange revolutionen i Ukraina 2003-2004, då Kreml just snopet tvingats se hur valet av deras presidentkandidat Viktor Janukovitj ogiltigförklaras efter massiva protester mot ett riggat val. Nu drogs linjerna upp för utformningen av den nya ryska propagandan.</p>
+<p>Nederlaget i Ukraina gjorde att makthavarna i Kreml såg det nödvändigt inte bara att kontrollera inhemsk media, utan även långsiktigt försöka förändra bilden av Ryssland – och världen &#8211; hos publiker i västvärlden. Tv-kanalen Russia Today, med kabel- och webbsändningar på bland annat engelska, tyska och franska, som i dag når många i Väst, blev ett viktigt verktyg.</p>
+<p>I en annan tid handlade propagandan om bombastiska skönmålanden, kategoriska förnekanden av missförhållanden, och att försköna och överdriva ekonomiska förhållanden och tillväxt. I dag förknippas den diskursen främst med Nordkorea, eller Saddam Husseins presstalesman Muhammed »Bagdad-Bob« Saheed al-Sahaf.</p>
+<p><strong>Då handlade propagandan</strong> om att presentera Sanningen med stort S. I dag är målet att så tvivel och skapa förvirring genom att kabla ut flera olika, konkurrerande narrativ. Mottagaren ska inte bli övertygad om statens förträfflighet, utan om att det inte går att veta säkert någonting.</p>
+<p>– Den ryska propagandaapparaten har förmågan att hallucinera verklighet, säger Peter Pomerantsev när jag talar med honom inför den svenska utgivningen av hans bok<em> Ingenting är sant och allt är möjligt</em> (Ordfront 2016).</p>
+<p>– De gjorde det i Ukraina 2014. Ur denna ”alternativa” verklighet föddes ett krig. Det var inte bara frågan om desinformation, det handlade om att skapa bilden av ett krig som inte fanns innan.</p>
+<p><strong>Den rysk-brittiske</strong> författaren och journalisten menar att även om Ryssland har tagit den nya tidens desinformerande irrpropaganda längst, så är de inte ensamma:</p>
+<p>– Det är ett globalt fenomen, vi ser det även i Storbritannien där politik handlar allt mindre om övertygelse och allt mer om spel med narrativ. Det handlar om en sorts sentida avart av postmodernism som blivit ett redskap för antidemokrater. Vi har sett det i Ungern med Orbán, och i Polen har man på sistone skapat rena hysterin kring flyktingar – som inte finns där. Det kändes helt surrealistiskt när jag var där nyligen, liksom ”men vad pratar ni om?”</p>
+<p>Det är en konsekvens av informationseran, menar Peter Pomerantsev. Han talar om en kris inom filosofin, som yttrar sig i att ingenting går att bevisa längre, att epistomologisk sanning inte längre existerar.</p>
+<p>– Den postmoderna synen på sanning är att all verklighet äger rum i våra huvuden. Den är subjektiv, påverkas av vår personliga kunskap, och kunskap definieras i sin tur av makt. Det innebär att det inte finns någon sanning, allt som existerar är makt. Denna analys var från början menad som en kritik av makten, men har nu blivit ett verktyg för makten.</p>
+<p><strong>När Ryssland under</strong> 00-talet hämtade sig från statskonkursen 1998, inte minst genom ökande oljeintäkter, fanns mycket pengar till underhållning. Som ung rysktalande med erfarenhet från brittisk TV var han guld värd i moderlandet, och Peter Pomerantsev skildrar i sin bok hur han fick välbetalda jobb på meriter som högst hade räckt till praktikplatser i London eller Los Angeles.</p>
+<p>Hans genre var skildring av människoöden, gärna unga kvinnors. Mycket känslor, ”human touch” som det heter på yrkesjargong. En långkörare var tårfyllda möten och avsked på en av Moskvas flygplatser.</p>
+<p>Det sättet att berätta genomsyrar stora delar av boken:</p>
+<p>– Min enda bakgrund är inom tv. Fast jag skrivit i fyra-fem år vid det här laget närmar jag mig alltid material som om jag skrev tv-manus. Det spelar ingen roll vad jag skriver om – först gör jag en plan, sedan delar jag upp det i scener. Jag letar efter händelser som kan illustrera det jag vill säga.</p>
+<p>”Jag är liberal… Det kan betyda vad som helst!”</p>
+<p><strong>Orden som avslutar</strong> ett kapitel i <em>Ingenting är sant och allt är möjligt</em> yttras av Sergej Kalenik, som för några år sedan gjorde sig ett namn som skapare av en satirisk superhjälteserie om Vladimir Putin. Tillsammans med sin sidekick, dvärgen Medvedev, bekämpar Super-Putin zombie-anhängare till den då fängslade oligarken Khodorkovskij och räddar vanliga ryssar från terrordåd.</p>
+<p>Kaleniks serie Super-Putin är ett typiskt exempel på hur samtida kulturyttringar, potentiellt subversiva, hanteras av regimen i Ryssland. Istället för att förbjuda och förfölja satsar man på att suga upp och rikta om. Således finns såväl gatukonst som rap med regimtroget innehåll. Man får skämta om makthavarna, så länge deras status ändå erkänns. ”Oskyldig politisk satir” kallade Sergej Kalenik sin serie i en intervju i Vice 2011.</p>
+<p>När Sergej Kalenik 2013 träffade Peter Pomerantsev och levererade sin träffsäkra definition av begreppet ”liberal” hade hans serie tagit honom nära maktens centrum. Vladislav Surkov, före detta vice premiärminister, före detta vice stabschef hos presidenten och chefsarkitekt för den moderna ryska propagandaapparaten, hade tagit Sergej Kalenik under sina vingar.</p>
+<p><strong>Vladislav Surkov beskrivs</strong> i Peter Pomerantsevs bok som en mycket intelligent gymnasieelev som imponerade på lärarna med sina insikter i litteraturvetenskap, men som vägrade anpassa sig till de välkammade Komsomolmedlemmarna i skolan. Efter Sovjetunionens fall kom hans talanger och okonventionella stil till användning när den nya tidens makthavare plockade upp alla lovande unga PR-snillen de kunde hitta.</p>
+<p>Samtidigt deltog Vladislav Surkov i den spirande moderna konstscenen i Moskva, och har under hela sin karriär i det moderna Ryssland aktivt odlat en medvetet mångtydig offentlig bild av sig själv som både makthavare och konstkännare, konnässör av amerikansk gangstarap och postmodern filosofi och myntare av begrepp som ”styrd demokrati” och ”konservativ modernisering”. Under sin tid på presidentkansliet höll han daglig kontakt med diverse förment oberoende partiledare och gav dem direktiv. Han är den högste inom den yrkeskår som kommit att kallas politteknologer eller statsingenjörer, och som inte riktigt har någon motsvarighet ens på de stora PR-byråerna i väst. På Surkovs initiativ skapades den regimtrogna ungdomsrörelsen Nasji &#8211; och Russia Today.</p>
+<p><strong>Den svenska utgåvan</strong> av <em>Ingenting är sant och allting är möjligt</em> pryds av högra halvan av president Putin – men han nämns aldrig vid namn i boken, och det är Vladislav Surkov – eller rättare hans ande – som är den egentliga huvudpersonen, med Pomerantsev själv som betraktaren.</p>
+<p>Även om rötterna till dagens ryska propagandaapparat och virtuella politik går tillbaka mer än ett sekel, är Vladislav Surkovs verkliga livsgärning hur han plockade upp och vidareutvecklade den modell för kontroll av massmedia som skapades av västliga mediemoguler som Rupert Murdoch och Silvio Berlusconi. Fenomenet är globalt, Peter Pomerantsev kallar det ”post-truth politics”. Vladimir Putin är ett exempel, Donald Trump, republikanernas presidentkandidat i USA, ett annat.</p>
+<p>– Trump och Putin låtsas inte ens att de inte ljuger, säger Peter Pomerantsev. Förr ansträngde sig politiker att framstå som ärliga. Även om de ljög var det viktigt för dem att det skulle se ut som om de talade sanning. Även om de förfalskade bevis, som med Iraks påstådda massförstörelsevapen inför invasionen, så var de angelägna om att det skulle finnas bevismaterial att peka på. Det Trump och Putin säger är: ”det spelar ingen roll om jag ljög, för det finns ingen sanning”.</p>
+<p>– Det är en stor filosofisk förändring som återspeglas i här. Skillnaden kanske är subtil, men samtidigt är den mycket viktig. Det påverkar också hur man kan bekämpa propagandan. Förr blev det rubriker: Journalister avslöjar Nixon! Skulle någon försöka det med Trump skulle han bara säga ”jaha, och?”</p>
+<p><strong>I detta medieklimat</strong> är det lätt att journalister förtvivlar, menar Peter Pomerantsev. Men han pekar på lösningar, och den första är att definiera vad man faktiskt ställs inför.</p>
+<p>– Jag tycker inte om termen informationskrig – det är vad Kreml säger, att allt handlar om ett krig, där båda sidor är lika dåliga och det inte finns några absoluta sanningar.</p>
+<p>– Istället bör vi tala om två saker. Dels om information som en form av vapen. Att information används i en militär kontext. Även om Ryssland använder andra metoder i Baltikum än att rulla in med tanks, som desinformation, cyberattacker, så är det en del av en militär strategi för att destabilisera ett annat land. Kanske utan att alls förklara krig.</p>
+<p>– Misstaget journalister gör är att dras in i detta. Men det Ryssland vill är inte att vinna någon strid om narrativet, utan att uppnå konkreta politiska och ekonomiska fördelar. Svaret på detta måste komma från militärt och diplomatiskt håll. Vi journalister vill alltid ha en debatt, det är problemet.</p>
+<p>– Det andra som vi måste vara medvetna om är attackerna på informationen. Desinformation, relativisering, eller helt enkelt dålig journalistik som medel för att angripa grunden för en verklighetsbaserad diskurs. När man väl lyckats med det börjar demokratin att vackla.</p>
+<p>– Vi måste återskapa förtroendet för medier som en källa till fakta, och det är ett mycket mer långsiktigt och mödosamt arbete än att släcka ner Russia Today, vilket inte är någon lösning i sig och något de tvärtom skulle älska att kunna peka finger på.</p>
+<p>– Russia Today har inget större inflytande i Storbritannien, just för att vi har starka egna medier. I länder med svagare medier, som Ukraina och andra östeuropeiska länder, får desinformationskampanjer mycket starkare effekt. Där finns inte RT, men däremot en massa olika små sajter som erbjuder en mix av konspirationsteorier, invandrarfientlighet och prorysk propaganda.</p>
+<p><strong>Dessutom har vi ledare</strong> i bland annat Ungern och Polen som kanske är motståndare till Ryssland, men som ändå spelar Putin i händerna genom att attackera sina egna oberoende medier, menar Peter Pomerantsev.</p>
+<p>– I Östeuropa ser vi hur oligarker lägger under sig all media, eller att staten tar över media – eller att staten kommer överens med oligarkerna om att slippa kritisk granskning i deras medier mot affärsfördelar. Så gör Orbán i Ungern och Erdogan i Turkiet.</p>
+<p>– Det kan låta banalt, men det fanns en tid när man kunde höra att journalistik inte var viktigt. Jag tror vi börjar förstå att journalister är lika viktiga som läkare, sköterskor och soldater. Vi behöver större offentlig finansiering, för vi kan inte sitta och vänta på att privata aktörer ska vakna.</p>
+<p><strong> Tidigare publicerad i Ordfront Magasin nr 2/2016</strong></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://virtuellpolitik.se/2016/06/14/att-hallucinera-verklighet/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">84</post-id>
+		<media:thumbnail url="https://virtuellpolitik.se/wp-content/uploads/2016/06/pomerantsev_webb.jpg" />
+		<media:content url="https://virtuellpolitik.se/wp-content/uploads/2016/06/pomerantsev_webb.jpg" medium="image">
+			<media:title type="html">pomerantsev_webb</media:title>
+		</media:content>
+
+		<media:content url="https://0.gravatar.com/avatar/fc5f578b5798a92c1b9593792fb1a496c0cebe2743aad275ff46c7f300816cb6?s=96&#38;d=identicon&#38;r=G" medium="image">
+			<media:title type="html">al4mut</media:title>
+		</media:content>
+	</item>
+		<item>
+		<title>Om propaganda – kampen om tanken</title>
+		<link>https://virtuellpolitik.se/2016/06/14/om-propaganda-kampen-om-tanken/</link>
+					<comments>https://virtuellpolitik.se/2016/06/14/om-propaganda-kampen-om-tanken/#comments</comments>
+		
+		<dc:creator><![CDATA[Daniel Wiklander]]></dc:creator>
+		<pubDate>Tue, 14 Jun 2016 09:00:06 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<guid isPermaLink="false">http://virtuellpolitik.se/?p=112</guid>
+
+					<description><![CDATA[En närmare titt på propagandaaktioner och metapolitiska strategier.]]></description>
+										<content:encoded><![CDATA[<div class="entry-content">
+<p class="BRD9"><strong>Modern propaganda kan handla om att över tid subtilt förskjuta debattens ramar, eller plantera begrepp som styr hur folk tänker om ett ämne. Påverkansoperationer och informationskrigföring kallas de tekniker och strategier som används för att förändra människors världsbild, och de används av såväl stater, intresseorganisationer som politiska rörelser. Daniel Wiklander tittar närmare på propagandaaktioner och metapolitiska strategier.</strong></p>
+<p class="BRD9">Politisk opinionsbildning kommer i många olika skepnader, från fredliga former som debattartiklar skrivna av intresseorganisationers pressavdelningar – till terrordåd med eller utan förklarande uttalanden. Syftet oavsett metod är alltid att med demokratiska eller odemokratiska medel påverka en opinion. Kanske för att få igenom politiska beslut, eller för att skapa handlingsutrymme för politiska rörelser.</p>
+<p class="BRD91"><strong>Men det finns också</strong> opinionsbildning som inte på långa vägar är så konkret eller direkt som vare sig debattartiklar eller sprängattentat. Där målet snarare är att förändra hur människor uppfattar och tänker om samhället runt omkring dem: att etablera ett nytt narrativ.</p>
+<p class="BRD91">I vissa fall önskar opinionsbildaren då hemlighålla att det alls pågår en kampanj. Inom ramen för psykologisk krigföring talar man om så kallad reflexiv kontroll, det vill säga att få motståndaren att ovetande fatta de beslut man önskar. Begreppet myntades i Sovjetunionen på 1960-talet, men metoden, i alla dess upptänkliga former, har rimligen varit i bruk både militärt och civilt långt tidigare, och från många håll. För att metoden ska vara effektiv krävs en noggrann analys av motståndarens handlingsmönster.</p>
+<p><strong>Mot den militära varianten</strong> finns metoder för försvar. David Bergman, doktorand i psykologi och arméofficer med psykologiska operationer, så kallad psyops, som specialområde, berättar om hur man upptäcker och motverkar påverkansoperationer:</p>
+<p class="BRD91">– När man hittar något vi tror inte rör sig om fri debatt eller fri åsiktsbildning, utan kommer från en utomstående part som vill påverka oss, då gör man alltid en propagandaanalys.</p>
+<p class="BRD91">– Man vevar bakåt helt enkelt, och analyserar budskapet och underliggande teman. Man arbetar bakåt i en målgruppsanalys. Vilken målgrupp tror vi de är ute efter, och vad är den övergripande målsättningen?</p>
+<p class="BRD91">– Hittar jag flera liknande propagandadelar kan jag ganska snabbt göra en analys av vad motståndarens psykologiska målsättningar i området är. Stämmer det överens med vad jag tror att motståndaren vill göra är det en bra validering.</p>
+<p class="BRD91"><strong>En enkel variant</strong> av påverkan, att förutsäga en motståndares reaktioner och använda dem för egna syften, är använda sig av vad som kallas 80/20-frågor. Kristoffer Housset på PR-byrån Westander beskriver metoden:</p>
+<p class="BRD91">– Du säger saker där du vet att du har stöd av en stor del av befolkningen, 80 procent idealt, medan 20 procent är oerhört kritiska och väldigt högljudda.</p>
+<p class="BRD91">– Sverigedemokraterna spelar på det här hela tiden. De får vänstern och antirasister och den »politiskt korrekta« liberala mediesfären att gå i taket över deras utspel. Det är ett effektivt sätt att provocera fram reaktioner.</p>
+<p>Samtidigt vet SD att även om styrkeförhållandena inte är 80 procent till deras fördel, så har de relativt stort stöd för en restriktivare invandringspolitik, och tjänar på att frågan hamnar på agendan.</p>
+<p class="BRD91">Ett konkret exempel på 80/20-tekniken, där hjärnan bakom dessutom redogjort i efterhand hur han tänkt, var Sverigedemokraternas reklam i tunnelbanan i Stockholm i somras. <a href="http://www.fokus.se/2015/11/reklamdemokraterna/" target="_blank">För tidningen Fokus berättade</a> kommunikationschefen Joakim Wallerstein om hur partiet behövde synas i media efter att en tid fått lite mindre uppmärksamhet än vanligt. Han beställde då reklamplats på en enda tunnelbanestation, och fick maximal utdelning när ett helt demonstrationståg bara ett dygn senare rev ner den medvetet felstavade ursäkten på halvknagglig engelska till turister för att människor tigger på Stockholms gator.</p>
+<p class="BRD91"><strong>Succén var i det närmaste</strong> total. Tanken var hela tiden att affischerna skulle rivas ner, även om det gick snabbare än väntat. En sifomätning efteråt visade enligt Fokus att 94 procent av alla tillfrågade män och 88 procent av kvinnorna hade nåtts av kampanjen, vilket gav den ett beräknat annonsvärde motsvarande 52 miljoner kronor. Den verkliga kostnaden för SD: 365 000 kronor.</p>
+<p>Medan sådana aktioner kan ge stor och omedelbar effekt, så är den också snabbt övergående. Den mest långsiktiga formen av opinionsbildning, och samtidigt den som har störst potential till varaktig förändring, är det som ibland kallas metapolitik. Begreppet förknippas främst med den så kallade nya högern i Frankrike, en reaktion på vänstervågen 1968, och föregångare till det som i dag kallas identitärer. Den nya högerns teoretiker, framför allt Alain de Benoist, läste den italienske marxisten Antonio Gramsci (1891-1937) och tog till sig hans teorier om kulturell hegemoni och om nödvändigheten att utmana den rådande uppfattningen om det möjligas gränser inom politiken.</p>
+<p class="BRD91">I Sverige arbetade samtidigt två olika politiska rörelser på varsitt håll utifrån liknande insikter om att den politiska spelplanen måste förändras om de skulle ha en chans. Dels <a href="https://www.arbetaren.se/2013/04/18/fascismen/" target="_blank">lade den gamle fascisten Per Engdahl upp riktlinjerna</a> för hur en ny högerradikal rörelse skulle kunna vinna mark i det sena 1970-talets politiska landskap. De omsattes i praktik av Bevara Sverige Svenskt 1979. 1988 bildade BSS parti och sedan 2010 sitter det partiet i riksdagen.</p>
+<p class="BRD91"><strong>Det andra metapolitiska</strong> projektet handlade om att förflytta den politiska spelplanens gränslinjer åt höger på ett annat vis, i riktning mot mindre statlig kontroll över näringslivet. Nyligen avlidne Sture Eskilsson, informationsdirektör på Svenska Arbetsgivareföreningen (idag Svenskt Näringsliv) från 1970 till 1990 och grundare av tankesmedjan Timbro 1978, var något av ett metapolitiskt geni. Med långsiktigt ideologiskt arbete bidrog han till att vrida samhällsdebatten och själva förutsättningarna för den långt åt höger, jämfört med hur det såg ut 1970.</p>
+<p>Ett nära övertydligt tecken för detta är hur den gamla symbolen för ”fri företagsamhet”, som SAF lanserade 1977, kallades ”den fjättrade människan” och föreställde en figur som bryter sig ur en ring. 2007 lanserade Svenskt Näringsliv en ny symbol. Nu står människan segrande, i frihet, ovanpå ringen.</p>
+<p>Vi vet inte hur SAF:s och Timbros interna dokument såg ut på 1970-talet, men den liberale filosofen och författaren Lars Gustafsson formulerade 1981, med utgångspunkt i Gramsci, viktiga principer som näringslivets politteknologer gjort till sina: Problemformuleringsprivilegiet och informationsprivilegiet. Gustafssons essä berör relationen mellan staten och medborgarna, och vem som tar sig rätten att dels formulera problem, dels kontrollera informationsflödet. Det handlar liksom hos Gramsci inte om en moralisk rätt i första hand, utan om ett privilegium som baseras på makt. Det kan med andra ord erövras.</p>
+<p class="BRD91"><strong>Informationsprivilegiet utmanas</strong> av en metapolitisk rörelse genom att bygga upp alternativa medier, eller genom att skaffa sig tillträde till och kontroll över etablerade medier. En enormt viktig insikt från socialister som Gramsci och George Orwell är att den som utmanar hegemonin måste sträva efter att förändra språket och själva sättet att tänka, för att på allvar erövra problemformuleringsprivilegiet. När även politiska motståndare börjar använda nya begrepp som uppfunnits av den som utmanar hegemonin, eller börjar använda gamla begrepp med nya betydelser som utmanaren ligger bakom, då är mycket vunnet.</p>
+<p class="BRD91">Ett uttryck som började surra i höstas i samband med att många asylsökande kom till Sverige var »systemkollaps«. En Googlesökning på Systemkollaps Sverige ger över 47 000 träffar, de flesta det senaste året. Även om en del sökträffar gäller artiklar som förklarar att det inte alls handlade om någon systemkollaps bidrog även de till att sprida begreppet, och till att etablera narrativet om en annalkande katastrof orsakad av en våg av flyktingar.</p>
+<p class="BRD91">– Det var ju väldigt lite som talade för en systemkollaps, säger Kristoffer Housset. Det är klart att det blev en ansträngd situation för myndigheter och kommuner, men det var framför allt ett bra uttryck för att sätta ord på människors oro.</p>
+<p class="BRD91"><strong>I och med Aftonbladets</strong> <a href="http://medieimperiet.story.aftonbladet.se/chapter/samtiden/" target="_blank">pågående artikelserie </a>om Sverigedemokraternas mediasatsningar har fenomenet metapolitik aktualiserats – utan att begreppet nämns. Men när partiordföranden Jimmie Åkesson säger ”Eftersom vi inte tillhör etablissemanget måste vi bygga ett eget i någon mening både medialt och kulturellt” är det detta han syftar på.</p>
+<p>Aftonbladets Martin Aagård <a href="http://www.aftonbladet.se/kultur/article22831328.ab" target="_blank">redovisar i en kommentar</a> till avslöjandena en intervju han gjorde härom året med Mattias Karlsson, en av de andra i den absoluta partitoppen.</p>
+<p>”Den stora visionen var att i grunden förändra den svenska mentaliteten genom att nästla sig in i skolan, kulturlivet och medierna”, skriver Aagård, och citerar Mattias Karlsson:</p>
+<p>”68-rörelsen var väldigt duktiga på att nästla sig in i kulturverksamheter och media. Långsiktigt ser jag att vi arbetar på det sättet”.</p>
+<p>Varpå Karlsson specifikt nämner Antonio Gramsci.</p>
+<p>Det är ingen överdrift att påstå att forskning på metapolitik och liknande former av politteknologi – för att använda ett uttryck lånat från Ryssland – är eftersatt i Sverige. Vi har forskning om och kartläggning av högerradikala rörelser och deras ideologi inom statsvetenskap, historia och idéhistoria. Vi har naturligtvis analyser av förändringar i den politiska opinionen över tid.</p>
+<p>Men trots att PR-trick blir allt viktigare i svensk politik, och trots att vi haft två snabbväxande högerpartier utan förankring i någon livaktig folkrörelse eller samhällssektor som tagit sig in i riksdagen de senaste 25 åren, verkar medvetenheten om metapolitikens betydelse fortfarande vara mycket liten.</p>
+<p class="BRD91"><strong>Tidigare publicerad i Ordfront Magasin 2/2016</strong></p>
+</div>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://virtuellpolitik.se/2016/06/14/om-propaganda-kampen-om-tanken/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">112</post-id>
+		<media:thumbnail url="https://virtuellpolitik.se/wp-content/uploads/2016/06/gramsci.jpg" />
+		<media:content url="https://virtuellpolitik.se/wp-content/uploads/2016/06/gramsci.jpg" medium="image">
+			<media:title type="html">gramsci</media:title>
+		</media:content>
+
+		<media:content url="https://0.gravatar.com/avatar/fc5f578b5798a92c1b9593792fb1a496c0cebe2743aad275ff46c7f300816cb6?s=96&#38;d=identicon&#38;r=G" medium="image">
+			<media:title type="html">al4mut</media:title>
+		</media:content>
+	</item>
+		<item>
+		<title>Kårlagen – för en annan tid</title>
+		<link>https://virtuellpolitik.se/2016/06/14/karlagen-for-en-annan-tid/</link>
+					<comments>https://virtuellpolitik.se/2016/06/14/karlagen-for-en-annan-tid/#respond</comments>
+		
+		<dc:creator><![CDATA[Daniel Wiklander]]></dc:creator>
+		<pubDate>Tue, 14 Jun 2016 08:39:59 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<guid isPermaLink="false">http://virtuellpolitik.se/?p=136</guid>
+
+					<description><![CDATA[Vigilantes med band till radikalhögern patrullerar gatorna i flera svenska städer. Jag reder ut varför inte ”kårlagen” används för att stoppa dem.]]></description>
+										<content:encoded><![CDATA[<p><strong>Vigilantes med band till radikalhögern patrullerar gatorna i flera svenska städer. Daniel Wiklander reder ut varför inte ”kårlagen” används för att stoppa dem.</strong></p>
+<p>Organisationen ”Soldiers of Odin” har väckt stor uppmärksamhet under våren. Den hävdar utåt att de bara vill skapa trygghet genom nattvandringar, men liksom i Finland där den första gruppen startade, domineras organisationens svenska gren av män från den radikala högern, och många är dessutom straffade för våldsbrott.</p>
+<p><strong>Röster har höjts</strong> om att Soldiers of Odin och liknande grupper borde kunna åtalas enligt lagen om olovlig kårverksamhet. Men är det så enkelt?</p>
+<p>Brottsbalkens artonde kapitel, fjärde paragrafen, lyder:</p>
+<blockquote><p>Om någon bildar eller deltager i sammanslutning, som måste anses vara avsedd att utgöra eller med hänsyn till sin beskaffenhet och det ändamål för vilket den är bildad lätt kan utvecklas till ett sådant maktmedel som militär trupp eller polisstyrka och som icke med vederbörligt tillstånd förstärker försvaret eller ordningsmakten, eller ock för sådan sammanslutning tager befattning med vapen, ammunition eller annan dylik utrustning, upplåter lokal eller mark för dess verksamhet eller understödjer den med penningar eller på annat sätt, dömes för olovlig kårverksamhet till böter eller fängelse i högst två år.</p></blockquote>
+<p><strong>BrB 18 kap 4§ har en</strong> lång och ganska udda historia. Dess föregångare tillkom 1934, efter en period då det inte bara startades uniformerade garden knutna till radikala partier efter tyskt mönster, utan även en väpnad milis, den så kallade Munckska kåren, med såväl konservativa som fascistiska medlemmar och accepterad av högerregeringen som styrde 1928-1930.</p>
+<p>Lydelsen i 1934 års lag var mer omfattande än i dagens, och kriminaliserade även sammanslutningar som ”avser att tjäna såsom skyddskår för politiskt parti eller därmed jämförlig grupp av samhällsmedlemmar” &#8211; det vill säga militanta nazistiska och kommunistiska gatuorganisationer som SA och Röd Front.</p>
+<p><strong>När lagen om</strong> olovlig kårverksamhet trädde i kraft 1934 bidrog det till att Munckska kåren, som dock redan förde en tynande tillvaro sedan den avväpnats 1931, helt lade ner verksamheten året därpå. Av partiernas skyddskårer var det bara Lindholmsnazisternas SA som lagen användes mot, men de frikändes. Röd Front-förbundet hade redan lagt ner när lagen trädde i kraft.</p>
+<p>Även Otto Hallberg, Lindholmsnazist och Finlandsfrivillig, frikändes 1953 av Svea Hovrätt för misstankar om olovlig kårverksamhet. Han hade då enligt åtalet försökt bygga upp en hemlig motståndsgrupp i händelse av sovjetisk ockupation eller kommunistiskt kuppförsök, men inte fått försvarsmakten intresserad av sina tjänster. Hovrätten motiverade sin dom med att det inte kunde bevisas att avsikten var att göra väpnat uppror – en förutsättning som inte ens nämns i den då aktuella lagtexten.</p>
+<p><strong>Efter Otto Hallberg</strong> har ingen åtalats för olovlig kårverksamhet. Säpo har däremot mycket ofta påstått sig misstänka brottet för att få avlyssna telefoner, eftersom olovlig kårverksamhet i en helt annan lag från 1952 nämns som ett av de brott som kan motivera avlyssning. Det verkar alltså handla om en rent juridisk-teknisk fråga snarare än seriösa misstankar.</p>
+<p>Om man tittar på vilka som alls åtalats för olovlig kårverksamhet, bristen på vägledande domar och att varken militanta organisationer på vare sig höger- eller vänstersidan, eller kriminella gäng med såväl uniformer, befälsordning och våldskapital, åtalats på över 60 år, så framträder bilden av en lag som verkar skriven för en helt annan tid och en annan och betydligt mer instabil samhällssituation än dagens. Till det kommer den mycket intressanta frågan om hur ett ”maktmedel som militär trupp eller polisstyrka” egentligen ska definieras i rätten. Är en grupp högerradikala män som markerar sin närvaro genom att gå tillsammans verkligen ett sådant maktmedel, hur obehagligt det än kan kännas att möta dem på gatan? Hur bevisar i så fall åklagaren detta? Lita på att det är där en försvarsadvokat skulle sätta in stöten.</p>
+<p><strong>Tidigare publicerad i Ordfront Magasin nr 2/2016</strong></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://virtuellpolitik.se/2016/06/14/karlagen-for-en-annan-tid/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">136</post-id>
+		<media:thumbnail url="https://virtuellpolitik.se/wp-content/uploads/2016/06/strafflag.jpg" />
+		<media:content url="https://virtuellpolitik.se/wp-content/uploads/2016/06/strafflag.jpg" medium="image">
+			<media:title type="html">strafflag</media:title>
+		</media:content>
+
+		<media:content url="https://0.gravatar.com/avatar/fc5f578b5798a92c1b9593792fb1a496c0cebe2743aad275ff46c7f300816cb6?s=96&#38;d=identicon&#38;r=G" medium="image">
+			<media:title type="html">al4mut</media:title>
+		</media:content>
+	</item>
+		<item>
+		<title>Nättroll i detalj – om Henrik Bromanders Vän av ordning</title>
+		<link>https://virtuellpolitik.se/2016/06/14/nattroll-i-detalj-om-henrik-bromanders-van-av-ordning/</link>
+					<comments>https://virtuellpolitik.se/2016/06/14/nattroll-i-detalj-om-henrik-bromanders-van-av-ordning/#respond</comments>
+		
+		<dc:creator><![CDATA[Daniel Wiklander]]></dc:creator>
+		<pubDate>Tue, 14 Jun 2016 07:12:39 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<guid isPermaLink="false">http://virtuellpolitik.se/?p=126</guid>
+
+					<description><![CDATA[Skildringen av den skånske muslimhatande nätkrigaren Joel, med nätaliaset ”Vän av ordning”, är mycket trovärdigt genomförd, och många recensenter har gett omdömen om romanbygget. Eftersom jag tidigare publicerat serier av Henrik Bromander, och tackas i en av hans böcker, har jag valt att närma mig boken på ett lite annat vis. Den innehåller nämligen en [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><strong>Skildringen av den skånske muslimhatande nätkrigaren Joel, med nätaliaset ”Vän av ordning”, är mycket trovärdigt genomförd, och många recensenter har gett omdömen om romanbygget. </strong><strong>Eftersom jag tidigare publicerat serier av <a href="http://henrikbromander.blogspot.se/2016/01/van-av-ordning.html" target="_blank">Henrik Bromander</a>, och tackas i en av hans böcker, har jag valt att närma mig boken på ett lite annat vis. Den innehåller nämligen en exakt närstudie i den ack så aktuella konsten att bedriva nättrollning.</strong></p>
+<p>Joel är en ung man med ett mindervärdeskomplex som lätt slår över i självhat, som han försöker hantera genom att vända hatet utåt under olika påhittade nätidentiteter. Från början handlar det inte om att under skydd av anonymiteten bedriva högerradikal kamp, utan att i största allmänhet reta upp människor och njuta av vart han kan driva dem, att trolla.</p>
+<p><strong>Det engelska uttrycket</strong> för nätprovokationer – trolling – anspelar ursprungligen inte på otrevliga sagoväsen, utan på fisketermen att tråla. Man drar ett nät av provokationer genom näthavet för att se vad, eller vem, som fastnar. Slänga ut krokar för att se vem som nappar skulle vi snarast säga på svenska. Skriva hatiska och kränkande inlägg på webbforum kräver bara rudimentär skrivkunnighet, en dator och uppkoppling.</p>
+<p>Att bli ett framgångsrikt troll däremot kräver viss intelligens, flit och människokännedom. Här visar sig Joels verkliga talang, och även om han prövar på andra former av politiskt engagemang, både demonstrationer och partiarbete på gräsrotsnivå för SD, så är det framför datorn han verkligen går i blom.</p>
+<p><strong>Han närmar sig</strong> här de moderna propagandatekniker som beskrivs <a href="https://virtuellpolitik.se/2016/06/14/om-propaganda-kampen-om-tanken/">på annat håll</a> på denna blogg, och Bromanders ingående beskrivningar av metoderna är högintressanta. Dels jobbar Joel med vinklingar och rena lögner i skildringar som uppges vara sanna på sin blogg, som får många läsare och till och med ger honom jobberbjudanden från SD:s ledning. Dels hittar han svaga punkter och angreppssätt för att få människor att bryta ihop, gärna med hjälp av olika väl valda identiteter. När en grupp transkvinnor ger sig på en radikalfeminist Joel hatar extra mycket ger han sig ut för att vara en av dem, och ger dem expertråd som sätter ordentlig fart på deras drev.</p>
+<p>Som en studie i nutida propagandamakeri är <em>Vän av ordning</em> sällsynt exakt. Även om Joel först mot slutet får något av den uppskattning han förtjänat från de makthavare vars ärenden han går, så är de metoder och den verksamhet som skildras korrekt och initierat beskrivna. Långt allvarligare än hatet och hoten i sociala medier, hur obehagliga de än är för de enskilda som drabbas, är hur den radikala högern lämnat resten av det politiska fältet långt bakom sig när det gäller att utnyttja alla metoder i det professionella trollets arsenal för att påverka verklighetsuppfattningen i breda grupper i samhället.</p>
+<p><strong>Tidigare publicerad i Ordfront Magasin nr 2/2016. <em>Vän av ordning</em> är utgiven på Atlas förlag våren 2016.</strong></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://virtuellpolitik.se/2016/06/14/nattroll-i-detalj-om-henrik-bromanders-van-av-ordning/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">126</post-id>
+		<media:thumbnail url="https://virtuellpolitik.se/wp-content/uploads/2016/06/vacc88navordning.jpg" />
+		<media:content url="https://virtuellpolitik.se/wp-content/uploads/2016/06/vacc88navordning.jpg" medium="image">
+			<media:title type="html">vänavordning</media:title>
+		</media:content>
+
+		<media:content url="https://0.gravatar.com/avatar/fc5f578b5798a92c1b9593792fb1a496c0cebe2743aad275ff46c7f300816cb6?s=96&#38;d=identicon&#38;r=G" medium="image">
+			<media:title type="html">al4mut</media:title>
+		</media:content>
+	</item>
+		<item>
+		<title>Vinklat och förenklat i Svt:s Ukrainadokumentär</title>
+		<link>https://virtuellpolitik.se/2016/06/02/vinklat-och-forenklat-i-svts-ukrainadokumentar/</link>
+					<comments>https://virtuellpolitik.se/2016/06/02/vinklat-och-forenklat-i-svts-ukrainadokumentar/#respond</comments>
+		
+		<dc:creator><![CDATA[Daniel Wiklander]]></dc:creator>
+		<pubDate>Thu, 02 Jun 2016 21:24:38 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<guid isPermaLink="false">http://virtuellpolitik.se/?p=290</guid>
+
+					<description><![CDATA[Nedanstående artikel skrevs inför visningen av ”Ukraina – revolutionens mörka sida” i Svt i våras. Filmen sköts upp på grund av protesterna, och sändes med ett par av de fel jag pekar ut korrigerade – som att Krim skulle ha blivit ryskt efter en folkomröstning. Dock förtar det inte den grundläggande kritiken. Filmen »Ukraina – [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><strong>Nedanstående artikel skrevs inför visningen av ”Ukraina – revolutionens mörka sida” i Svt i våras. Filmen sköts upp på grund av protesterna, och sändes med ett par av de fel jag pekar ut korrigerade – som att Krim skulle ha blivit ryskt efter en folkomröstning. Dock förtar det inte den grundläggande kritiken.</strong></p>
+<p>Filmen »Ukraina – revolutionens mörka sida«, av den franske regissören Paul Moreira, har väckt uppmärksamhet i Sverige redan innan den visats, inte minst för att Moreira hävdar att Krim blev ryskt genom en folkomröstning, och att större delen av de hundra som dödades av regeringsstyrkor under upproret 2014 skulle ha varit högerradikala milismän.</p>
+<p><strong>I sin strävan att bevisa</strong> en tes som han inte har täckning för sätter Paul Moreira i filmen krokben för sig själv. Han har inte hittat på existensen av tungt beväpnade milisgrupper grundade av nazister, som Azovregementet, däremot överdrivs deras makt och oberoende rejält. Det högerradikala partiet Svoboda, som gått från att sitta i övergångsregeringen våren 2014 till att stå utanför i stort sett all politisk makt, utmålas ännu hösten 2015 som ett seriöst hot mot statsskicket.</p>
+<p>När Moreira frågar Azovregementets chef Andriy Biletsky hur de finansieras framträder en av filmens största brister. Statsbidrag och frivilliga donationer från småföretagare blir svaret. Att en del av grundplåten lades av Ihor Kolomoyskiy, en av landets rikaste oligarker, nämner inte Andriy Biletsky. I sig inte så konstigt, oligarken ströp pengakranen till Azov för länge sedan, och att Kolomoyskiy har israeliskt medborgarskap är säkert besvärande för »socialnationalisten« Biletsky.</p>
+<p><strong>Men Paul Moreira nämner</strong> inte heller Kolomoyskiy och hans finansiering av bland andra Azov och den ännu mer belastade Aidarbataljonen med ett ord. Istället hävdar han att det var staten som beväpnade gardena.</p>
+<p>Faktum är, att trots att de är helt centrala för att förstå situationen i Ukraina både före Maidanupproret och i dag, så förbigås landets oligarker med tystnad. Intrycket av filmen blir ett land som bytt rysk kontroll via den avsatte presidenten Janukovitj mot att bli ett amerikanskt lydrike.</p>
+<p><strong>Sanningen om Ukraina</strong> nådde aldrig ut i västmedia, hävdar Paul Moreira i filmens slutminut, eftersom den inte passade in i ett alltför enkelt narrativ.</p>
+<p>Han kunde lika gärna ha talat om sig själv.</p>
+<p><strong>Tidigare publicerad i Ordfront Magasin nr 2/2016</strong></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://virtuellpolitik.se/2016/06/02/vinklat-och-forenklat-i-svts-ukrainadokumentar/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">290</post-id>
+		<media:thumbnail url="https://virtuellpolitik.se/wp-content/uploads/2016/06/moreira03.jpg" />
+		<media:content url="https://virtuellpolitik.se/wp-content/uploads/2016/06/moreira03.jpg" medium="image">
+			<media:title type="html">moreira03</media:title>
+		</media:content>
+
+		<media:content url="https://0.gravatar.com/avatar/fc5f578b5798a92c1b9593792fb1a496c0cebe2743aad275ff46c7f300816cb6?s=96&#38;d=identicon&#38;r=G" medium="image">
+			<media:title type="html">al4mut</media:title>
+		</media:content>
+	</item>
+		<item>
+		<title>Några ord om Miljöpartiet och entrism</title>
+		<link>https://virtuellpolitik.se/2016/04/24/nagra-ord-om-miljopartiet-och-entrism/</link>
+					<comments>https://virtuellpolitik.se/2016/04/24/nagra-ord-om-miljopartiet-och-entrism/#comments</comments>
+		
+		<dc:creator><![CDATA[Daniel Wiklander]]></dc:creator>
+		<pubDate>Sun, 24 Apr 2016 22:59:43 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<guid isPermaLink="false">http://virtuellpolitik.se/?p=41</guid>
+
+					<description><![CDATA[I kölvattnet av skandalen med det miljöpartistiska statsrådet Mehmet Kaplans kontakter med turkiska nationalister har det hävdats att Miljöpartiet infiltrerats av islamister.]]></description>
+										<content:encoded><![CDATA[<p><img data-attachment-id="71" data-permalink="https://virtuellpolitik.se/2016/04/24/nagra-ord-om-miljopartiet-och-entrism/mparmenien/" data-orig-file="https://virtuellpolitik.se/wp-content/uploads/2016/04/mparmenien.jpg" data-orig-size="600,230" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="MParmenien" data-image-description="" data-image-caption="" data-medium-file="https://virtuellpolitik.se/wp-content/uploads/2016/04/mparmenien.jpg?w=300" data-large-file="https://virtuellpolitik.se/wp-content/uploads/2016/04/mparmenien.jpg?w=600" class="alignnone size-full wp-image-71" src="https://virtuellpolitik.se/wp-content/uploads/2016/04/mparmenien.jpg?w=1000" alt="MParmenien"   srcset="https://virtuellpolitik.se/wp-content/uploads/2016/04/mparmenien.jpg 600w, https://virtuellpolitik.se/wp-content/uploads/2016/04/mparmenien.jpg?w=150&amp;h=58 150w, https://virtuellpolitik.se/wp-content/uploads/2016/04/mparmenien.jpg?w=300&amp;h=115 300w" sizes="(max-width: 600px) 100vw, 600px" /></p>
+<p><em>Bilden: Intervju med miljöpartist i Turkiska ungdomsförbundets tidning Euroturk nr 2 2014, där hon hävdar att partiet skulle arbeta för att beslutet att erkänna det turkiska folkmordet på armenier 1915 inte skulle verkställas i regeringen. </em></p>
+<p><strong>I kölvattnet av skandalen med det miljöpartistiska statsrådet Mehmet Kaplans kontakter med turkiska nationalister har det hävdats att Miljöpartiet infiltrerats av islamister. Men finns det verkligen belägg för det?</strong></p>
+<p>Det var i TV 4:s Nyheterna i lördags som Lars Nicander, chef för Centrum för asymmetriska hot och terrorismstudier (förkortat Cats) vid Försvarshögskolan, <a href="http://www.expressen.se/nyheter/forskare-mp-kan-ha-infiltrerats-av-islamister/" target="_blank">uttryckte oro för vad han anser kan vara tecken på detta</a>.</p>
+<p><strong>Lars Nicander jämförde</strong> med infiltration från sovjetiskt håll under det kalla kriget, och pekade ut Muslimska brödraskapet, vars sympatisörer han menar fått ”stort fotfäste” i Miljöpartiet.</p>
+<p>Samtidigt som Nicander drar paralleller till Sovjetunionens verksamhet, som omfattade påverkansoperationer och värvande av inflytelseagenter likaväl som ren infiltration, pekar han som exempel på enskilda miljöpartister som i offentliga sammanhang synts göra gester som förknippas med Muslimska brödraskapet.</p>
+<p><strong>Det hänger inte ihop</strong>. En infiltratör som går en stats eller organisations ärenden för att påverka politiken hos ett regeringsparti ställer sig knappast och flashar ett tecken som, om än ganska osakligt, av många förknippas med uppdragsgivaren. Inte heller fastnar hen på bilder som bevisar komprometterande middagssällskap. Det gäller tvärtom att smälta in i bakgrunden, verka utan att synas, kanske sammanföra rätt personer eller att som politiskt sakkunnig exempelvis bidra till formuleringar i lagförslag.</p>
+<p>Men vid sidan av infiltration finns ett annat politiskt fenomen: Entrism. Begreppet förknippas främst med taktiken hos vissa trotskistiska organisationer att inträda i större vänsterpartier för att påverka dessa i trotskistisk riktning. Entrism kan, men behöver inte vara dold – det beror helt på det större partiets regler kring tendensfrihet.</p>
+<p><strong>Det mest framgångsrika</strong> exemplet på trotskistisk entrism är när grupperingen Militant efter decennier av fraktionsarbete i brittiska Labour (ett parti med större tendensfrihet än exempelvis SAP) i början av 1980-talet tog över styret av storstaden Liverpool. Detta ledde till en bitter strid med den konservativa regeringen, som gjorde allt den kunde för att försvåra för kommunisterna i Liverpools stadsfullmäktige, samtidigt som Labour slängde ut Militant ur partiet.</p>
+<p>I Sverige försökte trotskister kring tidningen Offensiv, influerade av Militants lyckade övertagande av Labour Party Young Socialists, på 1970-talet skaffa sig majoritet i SSU. I början av 1980-talet uteslöts samtliga ur förbundet.</p>
+<p>Entrism som syftar till att kuppa eller till och med splittra en organisation är naturligtvis en direkt fientlig handling, men det finns en stor spännvidd mellan sådant som Militant och Offensiv ägnade sig åt, och hur till exempel en yngre generation inom ett parti går samman och trycker på för ideologisk förändring utan att för den skull ägna sig åt något som kan definieras som entrism.</p>
+<p><strong>En avgörande faktor</strong> är lojaliteten. Accepterar medlemmen partilinjen och agerar demokratiskt för att förändra den, med hänsyn till vilken tendensfrihet som tillåts, för det man anser vara partiets bästa? Eller ser man partiet som enbart en plattform där man kan ta del av ekonomiska resurser och skaffa sig eller sin grupp legitimitet för att bedriva politik utan minsta hänsyn till annat än vad partiledningen ytterst tolererar?</p>
+<p>Entrism i denna form behöver inte påverka partiets officiella politik nämnvärt, men kan innebära olika möjligheter att bedriva politik utanför partiet genom att använda partitillhörigheten som plattform för att göra sin röst hörd i olika frågor.</p>
+<p><strong>Beträffande Miljöpartiet</strong> finns i dag inga som helst bevis för organiserad entrism – än mindre infiltration av KGB-snitt – från islamister. Vad som däremot finns är medlemmar med politiska uppdrag på olika nivåer som utmärkt sig offentligt genom politiska ställningstaganden som antingen ligger nära <a href="http://www.aftonbladet.se/debatt/article22417501.ab" target="_blank">konservativa islamiska värderingar</a>, eller som innebär <a href="http://www.svt.se/opinion/erdogan-ar-den-som-gjort-mest-for-att-starka-demokratin-i-turkiet" target="_blank">stöd för Turkiets islamistiska regim</a> och för den turkiska statens brutala framfart mot sina medborgare i nutid eller historiskt. Ibland har samma person gjort uttalanden av båda sorterna. Många av dem det gäller är dessutom dubbelorganiserade i samma islamiska föreningar, varav vissa startats av just de berörda miljöpartisterna.</p>
+<p>Det finns alltså om inte annat grund för en arbetshypotes, framför allt för den internutredning som Miljöpartiets partisekreterare rimligen bör ha dragit igång, om att människor som delar <a href="http://www.aftonbladet.se/nyheter/article22671953.ab" target="_blank">sympatier för den turkiska regimen</a> och dessutom <a href="http://www.aftonbladet.se/nyheter/article22650866.ab" target="_blank">ingår i vissa islamiska organisationer</a> även valt att organisera sig i Miljöpartiet. Det måste sedan vara upp till partiet hur man väljer att agera – anser man att det är något som ska tolereras eller får medlemmen välja mellan Erdogan och Fridolin?</p>
+<p><strong>Debatten som startade</strong> med bostadsminister Mehmet Kaplans samröre med turkiska fascister och islamister har efter hans avgång tyvärr slirat ut i att handla om hur enskilda män hälsar på kvinnor, eller om den gest med fyra fingrar som Lars Nicander på Försvarshögskolan anser vara tecken på islamistiska åsikter men som faktiskt kommit att lika gärna betyda solidaritet med offren för en massaker i Egypten 2013.</p>
+<p>Det är mycket olyckligt, dels för det allmänna muslimhat som nu får extra bränsle, dels på grund av att de utpekade kan försvara sig med att hävda att de är utsatta för just generaliserat muslimhat. De osakliga anklagelserna om regelrätt infiltration är också de olyckliga, inte minst för att det antagligen snarare handlar om att partiet tolererat vissa åsikter i hopp om att få röster från vissa minoriteter.</p>
+<p><strong>Debatten borde åter</strong> börja handla om stödet till den turkiska regimen, och hur det kunnat framföras offentligt av företrädare för ett svenskt regeringsparti utan att dessa fått problem.</p>
+<p>Det som förenar de tre personer som hittills lämnat sina uppdrag i Miljöpartiet eller Grön Ungdom är att de antingen bevisats <a href="http://www.svt.se/nyheter/inrikes/kaplan-umgas-med-erdo-ans-man-i-sverige" target="_blank">haft samröre med turkiska nationalister</a>, eller offentligt hyllat antingen president Erdogan personligen eller turkiska statens blodiga attacker mot kurdiska städer. En av dem hade en statsrådspost, trots att misstankarna mot honom knappast var nya. Det gör hela frågan till en angelägenhet för fler än bara miljöpartister.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://virtuellpolitik.se/2016/04/24/nagra-ord-om-miljopartiet-och-entrism/feed/</wfw:commentRss>
+			<slash:comments>5</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">41</post-id>
+		<media:thumbnail url="https://virtuellpolitik.se/wp-content/uploads/2016/04/mparmenien.jpg" />
+		<media:content url="https://virtuellpolitik.se/wp-content/uploads/2016/04/mparmenien.jpg" medium="image">
+			<media:title type="html">MParmenien</media:title>
+		</media:content>
+
+		<media:content url="https://0.gravatar.com/avatar/fc5f578b5798a92c1b9593792fb1a496c0cebe2743aad275ff46c7f300816cb6?s=96&#38;d=identicon&#38;r=G" medium="image">
+			<media:title type="html">al4mut</media:title>
+		</media:content>
+	</item>
+		<item>
+		<title>Propaganda och konspirationsteorier – en lång tradition</title>
+		<link>https://virtuellpolitik.se/2015/12/07/propaganda-och-konspirationsteorier-en-lang-tradition/</link>
+					<comments>https://virtuellpolitik.se/2015/12/07/propaganda-och-konspirationsteorier-en-lang-tradition/#respond</comments>
+		
+		<dc:creator><![CDATA[Daniel Wiklander]]></dc:creator>
+		<pubDate>Mon, 07 Dec 2015 15:59:30 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<guid isPermaLink="false">http://virtuellpolitik.wordpress.com/?p=30</guid>
+
+					<description><![CDATA[I slutet av november deltog jag i en paneldiskussion hos stiftelsen KåKå i Stavanger. Ämnet var konspirationsteorier, utifrån frågeställningen ”lever vi i ett konspirationssamhälle?”. 36 minuter in i den här filmen kan man se mitt inledningsanförande, om hur modern rysk propaganda använder sig av konspirationsteorier och av psykologin bakom dem: &#160;]]></description>
+										<content:encoded><![CDATA[<p>I slutet av november deltog jag i en paneldiskussion hos stiftelsen <a href="http://kverulantkatedralen.no/">KåKå</a> i Stavanger. Ämnet var konspirationsteorier, utifrån frågeställningen ”lever vi i ett konspirationssamhälle?”.</p>
+<p>36 minuter in i den här filmen kan man se mitt inledningsanförande, om hur modern rysk propaganda använder sig av konspirationsteorier och av psykologin bakom dem:</p>
+<p>&nbsp;</p>
+<div class="jetpack-video-wrapper"><iframe class="youtube-player" width="1000" height="563" src="https://www.youtube.com/embed/VqWWaF508NY?version=3&#038;rel=1&#038;showsearch=0&#038;showinfo=1&#038;iv_load_policy=1&#038;fs=1&#038;hl=sv&#038;autohide=2&#038;wmode=transparent" allowfullscreen="true" style="border:0;" sandbox="allow-scripts allow-same-origin allow-popups allow-presentation allow-popups-to-escape-sandbox"></iframe></div>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://virtuellpolitik.se/2015/12/07/propaganda-och-konspirationsteorier-en-lang-tradition/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">30</post-id>
+		<media:thumbnail url="https://virtuellpolitik.se/wp-content/uploads/2015/12/img_0036.png" />
+		<media:content url="https://virtuellpolitik.se/wp-content/uploads/2015/12/img_0036.png" medium="image">
+			<media:title type="html">IMG_0036</media:title>
+		</media:content>
+
+		<media:content url="https://0.gravatar.com/avatar/fc5f578b5798a92c1b9593792fb1a496c0cebe2743aad275ff46c7f300816cb6?s=96&#38;d=identicon&#38;r=G" medium="image">
+			<media:title type="html">al4mut</media:title>
+		</media:content>
+	</item>
+	</channel>
+</rss>
